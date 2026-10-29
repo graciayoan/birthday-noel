@@ -5,69 +5,61 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>happy birthday, my love 🤎</title>
-  <meta name="description" content="I love you endlessly. A little birthday surprise made with love.">
+  <title>happy birthday, love</title>
+  <meta name="description" content="I love you">
 
-  <!-- WhatsApp link preview -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="happy birthday, my love 🤎">
-  <meta property="og:description" content="I love you endlessly. A little birthday surprise made with love.">
+  <meta property="og:title" content="happy birthday, love">
+  <meta property="og:description" content="I love you">
   <meta property="og:image" content="https://cdnm.heyzine.com/flip-book/cover/6e1d063a0c1.jpg">
-  <meta property="og:url" content="https://heyzine.com/flip-book/6e1d063a0c.html">
-  <meta name="twitter:card" content="summary_large_image">
 
   <style>
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
     body {
       margin: 0;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 24px;
+      padding: 24px 18px;
       background: #f5eee7;
       color: #594638;
-      font-family: Georgia, serif;
-      text-align: center;
+      font-family: "Callisto MT", Georgia, serif;
     }
 
     .card {
       width: 100%;
-      max-width: 360px;
-      padding: 22px;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 28px;
       background: #fffaf4;
-      border-radius: 18px;
-      box-shadow: 0 8px 30px #59463818;
+      border-radius: 28px;
     }
 
-    img {
-      width: 100%;
+    .cover {
       display: block;
-      border-radius: 10px;
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
+
+    .text {
+      margin-top: 38px;
+      text-align: left;
+      font-family: "Callisto MT", Georgia, serif;
+      font-weight: normal;
     }
 
     h1 {
-      margin: 22px 0 10px;
-      font-size: 28px;
+      margin: 0 0 16px;
+      font-size: clamp(28px, 5vw, 48px);
+      line-height: 1.25;
       font-weight: normal;
     }
 
     p {
-      font-size: 16px;
-      line-height: 1.6;
-    }
-
-    a {
-      display: inline-block;
-      margin-top: 12px;
-      padding: 13px 22px;
-      border-radius: 30px;
-      background: #745745;
-      color: white;
-      text-decoration: none;
-      font-family: Arial, sans-serif;
-      font-size: 14px;
+      margin: 0;
+      font-size: clamp(22px, 3.5vw, 32px);
+      line-height: 1.4;
     }
   </style>
 </head>
@@ -75,16 +67,15 @@
 <body>
   <main class="card">
     <img
+      class="cover"
       src="https://cdnm.heyzine.com/flip-book/cover/6e1d063a0c1.jpg"
       alt="Birthday cover"
     >
 
-    <h1>happy birthday, my love 🤎</h1>
-    <p>I love you endlessly.</p>
-
-    <a href="https://heyzine.com/flip-book/6e1d063a0c.html">
-      Open your little surprise ♡
-    </a>
+    <div class="text">
+      <h1>happy birthday, love</h1>
+      <p>I love you</p>
+    </div>
   </main>
 </body>
 </html>
