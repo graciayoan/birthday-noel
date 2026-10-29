@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>happy birthday, love</title>
   <meta name="description" content="I love you">
@@ -19,29 +19,43 @@
       box-sizing: border-box;
     }
 
+    html {
+      min-height: 100%;
+    }
+
     body {
       margin: 0;
-      padding: 24px 16px;
+      min-height: 100vh;
+      padding: 30px 16px;
       background: #f5eee7;
       color: #594638;
       font-family: "Callisto MT", Georgia, serif;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .card {
       width: 100%;
       max-width: 440px;
-      margin: 0 auto;
-      padding: 18px;
+      margin: auto;
+      padding: 24px;
       background: #fffaf4;
-      border-radius: 24px;
+      border-radius: 28px;
+    }
+
+    .cover-link {
+      display: block;
+      width: 100%;
+      max-width: 260px;
+      margin: 0 auto;
     }
 
     .cover {
       display: block;
       width: 100%;
-      max-width: 280px;
       height: auto;
-      margin: 0 auto;
       border-radius: 10px;
     }
 
@@ -67,14 +81,14 @@
 
     @media (max-width: 480px) {
       body {
-        padding: 16px 12px;
+        padding: 20px 14px;
       }
 
       .card {
-        padding: 14px;
+        padding: 18px;
       }
 
-      .cover {
+      .cover-link {
         max-width: 240px;
       }
 
@@ -91,11 +105,17 @@
 
 <body>
   <main class="card">
-    <img
-      class="cover"
-      src="https://cdnm.heyzine.com/flip-book/cover/6e1d063a0c1.jpg"
-      alt="Birthday cover"
+    <a
+      class="cover-link"
+      href="https://heyzine.com/flip-book/6e1d063a0c.html"
+      aria-label="Open birthday flipbook"
     >
+      <img
+        class="cover"
+        src="https://cdnm.heyzine.com/flip-book/cover/6e1d063a0c1.jpg"
+        alt="Birthday cover"
+      >
+    </a>
 
     <div class="text">
       <h1>happy birthday, love</h1>
